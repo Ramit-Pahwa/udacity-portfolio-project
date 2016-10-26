@@ -1,0 +1,185 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body  {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #4f4f4f;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #4f4f4f;
+}
+
+h1 {
+    color: #7c777c;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+a:hover, a:visited, a:link, a:active {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  padding: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.row {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.header-container {
+  max-width: 100%;
+  display: flex;
+}
+
+.logo {
+  width: 50%;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.main-title {
+  width: 50%;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 30px;
+  padding-bottom: 15px;
+}
+
+/* bootstrap navbar */
+.navbar-default {
+  background-color: #f1f1f1;
+  border: transparent;
+  margin-bottom: 0;
+}
+
+.nav-item {
+  text-transform: uppercase;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.portfolio {
+  max-width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.portfolio-title {
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.project {
+  margin: 10px;
+  max-width: 33.33%;
+}
+
+.project img {
+  max-width: 100%;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: "fontawesome", sans-serif;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #f1f1f1;
+  margin-bottom: 0;
+}
+
+footer ul {
+    text-align: center;
+    padding: 0;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline-flex;
+  margin: 30px;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 550px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    padding-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1.5em
+  }
+
+  .main-title {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 2em;
+  }
+
+  p, a {
+    font-size: 1.75rem;
+  }
+
+  .portfolio {
+    flex-flow: wrap column;
+  }
+
+  .project {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .project a {
+    text-decoration:underline;
+  }
+
+  [class*="fontawesome-"]:before {
+    font-size: 35px;
+  }
+
+  footer ul li {
+    margin: 15px;
+  }
+}

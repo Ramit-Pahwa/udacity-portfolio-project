@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Erika LeBlanc Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- custom bootstrap css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+<!-- jquery for bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap javascript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300%7CLora">
+  </head>
+  <body>
+<!-- open flex container -->
+    <section class="flex-container">
+<!-- open header -->
+      <header class="row header-container">
+        <div class="logo">
+          <img src="images/el-logo.png" id="logo" alt="dark purple logo which reads 'EL' with white background and a line shaped like a roof on top">
+        </div>
+        <div class="main-title">
+          <h1>Erika LeBlanc</h1>
+          <h4>Front-End Web Dev</h4>
+        </div>
+<!-- open bootstrap nav -->
+        <nav class="row navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target= "#collapse-navbar">
+              <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          </div>
+            <div class="collapse navbar-collapse" id="collapse-navbar">
+              <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-item" href="#featured">Featured Work</a></li>
+                <li class="nav-item"><a class="nav-item" href="#contact">Contact</a></li>
+              </ul>
+          </div>
+        </nav>  <!-- end nav -->
+      </header>  <!-- end header -->
+      <div class="row hero">
+        <img src="images/pasteltriangles_lrg.jpeg" srcset="images/pasteltriangles_sm.jpeg 700w, images/pasteltriangles_med.jpeg 1000w, images/pasteltriangles_lrg.jpeg 1300w" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" alt="close up of a mosaic in pastel blues, greens and pinks">
+      </div>
+      <h2 class="row portfolio-title" id="featured">Featured Work</h2>
+      <section class="portfolio">
+        <div class="project">
+          <a href="http://www.github.com">
+            <img src="images/pastelbuilding_lrg.jpeg" srcset="images/pastelbuilding_sm.jpeg 700w, images/pastelbuilding_med.jpeg 1000w, images/pastelbuilding_lrg.jpeg 1300w" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" alt="pastel-colored image of the side of an apartment building with many windows and patios">
+          </a>
+          <h3>Project One</h3>
+          <p>Udacity Front-end Web development Nanodegree.</p>
+          <a href="www.github.com">www.github.com</a>
+        </div>
+        <div class="project">
+          <a href="http://www.github.com">
+            <img src="images/bluebuilding_lrg.jpeg" srcset="images/bluebuilding_sm.jpeg 700w, images/bluebuilding_med.jpeg 1000w, images/bluebuilding_lrg.jpeg 1300w" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" alt="close up of the side of a brutalist building with blue reflecting windows">
+          </a>
+          <h3>Project Two</h3>
+          <p>Udacity Front-end Web development Nanodegree.</p>
+          <a href="www.github.com">www.github.com</a>
+        </div>
+        <div class="project">
+          <a href="http://www.github.com">
+            <img src="images/deskchair_lrg.jpeg" srcset="images/deskchair_sm.jpeg 700w, images/deskchair_med.jpeg 1000w, images/deskchair_lrg.jpeg 1300w" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" alt="photo of a minimalist work space with beige chair white desk and stark accessories">
+          </a>
+          <h3>Project Three</h3>
+          <p>Udacity Front-end Web development Nanodegree.</p>
+          <a href="www.github.com">www.github.com</a>
+        </div>
+      </section>
+
+<!-- open footer -->
+      <footer class="row" id="contact">
+        <ul>
+          <li><a href="https://github.com/erikaleigh" target="blank"><div class="fontawesome-github-alt"></div></a>
+          </li>
+          <li><a href="https://twitter.com/erikalleigh" target="blank"><div class="fontawesome-twitter"></div></a>
+          </li>
+          <li><a href="https://ca.linkedin.com/in/erika-leblanc-39a667106" target="blank"><div class="fontawesome-linkedin"></div></a>
+          </li>
+          <li><a href="http://www.erikalleblanc.com" target="blank"><div class="fontawesome-home"></div></a>
+          </li>
+        </ul>
+      </footer>  <!-- close footer -->
+    </section>  <!-- close container -->
+
+    <script>
+    $('a[href*=\\#]').on('click', function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+});
+    </script>
+  </body>
+</html>
