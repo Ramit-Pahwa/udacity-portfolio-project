@@ -13,7 +13,10 @@ body  {
   color: #4f4f4f;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #4f4f4f;
@@ -78,7 +81,7 @@ p {
   text-transform: uppercase;
 }
 
-.hero img {
+.hero-img {
   max-width: 100%;
   height: auto;
   margin: 0;
@@ -158,7 +161,8 @@ footer ul li {
     font-size: 2em;
   }
 
-  p, a {
+  p,
+  a {
     font-size: 1.75rem;
   }
 
